@@ -1,0 +1,20 @@
+a[href^=http]::after {
+    content: url(../imagens/newWindow-icon.png);
+}
+
+a[href$=pdf]::before {
+    content: url(../imagens/pdf-icon.gif);
+}
+
+
+input[name="chk1"]:checked + label{
+    color: green;
+}
+
+label[for="chk1"]{
+    color: red;
+}
+
+label[for="chk2"]{
+    color: blue;
+}
