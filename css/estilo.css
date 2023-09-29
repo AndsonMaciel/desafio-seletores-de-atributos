@@ -1,20 +1,34 @@
-a[href^=http]::after {
+a {
+    display: inline-block;
+    margin: .5em;
+}
+
+a[target="_blank"]::after {
     content: url(../imagens/newWindow-icon.png);
+    margin-left: .5em;
 }
 
 a[href$=pdf]::before {
     content: url(../imagens/pdf-icon.gif);
+    margin-right: .5em;
 }
 
 
-input[name="chk1"]:checked + label{
+/* input[name="chk1"]:checked + label */
+input[type="checkbox"]:checked+label {
     color: green;
 }
 
-label[for="chk1"]{
+/* label[for="chk1"] */
+input[type="checkbox"]:not(:disabled)+label {
     color: red;
 }
 
-label[for="chk2"]{
+/* label[for="chk2"] */
+input[type="checkbox"]:disabled+label {
     color: blue;
+}
+
+li li:nth-child(3) {
+    background-color: yellow;
 }
